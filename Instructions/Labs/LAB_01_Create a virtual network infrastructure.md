@@ -46,7 +46,7 @@ Vous pouvez utiliser un groupe de sécurité réseau pour filtrer le trafic rés
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Groupe de ressources|Sélectionnez **Créer nouveau**, entrez **az-rg-1,**, puis sélectionnez **OK**.|
+   |Resource group|Sélectionnez **Créer nouveau**, entrez **az-rg-1,**, puis sélectionnez **OK**.|
    |**Détails de l’instance**|
    |Nom du réseau virtuel|Entrez **vnet-1**|
    |Région|Sélectionnez **(États-Unis) USA Est**|  
@@ -90,7 +90,7 @@ Un groupe de sécurité d’application vous permet de regrouper des serveurs do
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Groupe de ressources|Sélectionnez **az-rg-1**.|
+   |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **asg-web**.|
    |Région|Sélectionnez **USA Est**.|  
@@ -105,7 +105,7 @@ Un groupe de sécurité d’application vous permet de regrouper des serveurs do
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Groupe de ressources|Sélectionnez **az-rg-1**.|
+   |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **asg-mgmt**.|
    |Région|Sélectionnez **USA Est**.|
@@ -130,7 +130,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Groupe de ressources|Sélectionnez **az-rg-1**.|
+   |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **nsg-1**.|
    |Région|Sélectionnez **USA Est**.|  
@@ -175,7 +175,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |Plages de ports de destination|Entrer **80,443**|
    |Protocol|Sélectionnez **TCP**.|
    |Action|Conservez la valeur par défaut **Autoriser**.|
-   |Priorité|Conservez la valeur par défaut **100**.|
+   |Priority|Conservez la valeur par défaut **100**.|
    |Nom|Entrez **allowweball**.|
 
 4. Sélectionnez **Ajouter**.
@@ -192,7 +192,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |Plages de ports de destination|Conservez la valeur par défaut **3389**.|
    |Protocol|Conservez la valeur par défaut **TCP**.|
    |Action|Conservez la valeur par défaut **Autoriser**.|
-   |Priorité|Conservez la valeur par défaut **110**.|
+   |Priority|Conservez la valeur par défaut **110**.|
    |Nom|Entrez *allowrdpall*.|
    
 6. Sélectionnez **Ajouter**.
@@ -213,9 +213,9 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |**Détails de l’instance**|
    |Nom de la machine virtuelle|Entrez **vm-1**.|
    |Région|Sélectionnez **(États-Unis) USA Est**|
-   |Options de disponibilité|Conservez la valeur par défaut **Aucune redondance d’infrastructure requise**.|
-   |Type de sécurité|Gardez la valeur par défaut **Standard**|
-   |Image|Sélectionnez **Windows Server 2022 Datacenter - x64 Gen2**|
+   |Options de disponibilité|Dans le menu déroulant Zone de disponibilité, sélectionnez **Aucune redondance d’infrastructure requise**|
+   |Type de sécurité|Dans le menu déroulant Type de sécurité, sélectionnez **Standard**|
+   |Image|Dans le menu déroulant Image, sélectionnez **Centre de données Windows Server 2022 : Édition Azure : x64 Gen2**|
    |Architecture de machine virtuelle|Conservez la valeur par défaut **x64**.|
    |Exécuter avec la remise Azure Spot|Conservez la valeur par défaut de la case non cochée.|
    |Taille|Conservez la valeur par défaut **Standard_D2s_v3-2 vcpus, 8 Go de mémoire**.|
@@ -257,15 +257,15 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
 
 2. Sélectionnez **vm-1**.
  
-3. Sélectionnez **Mise en réseau** dans la section **Groupes de sécurité d’application** de **vm-1**.
+3. Sélectionnez **Mise en réseau** dans la section de **vm-1**
 
-4. Sélectionnez l’onglet **Groupes de sécurité d’application**, puis + **Ajouter des groupes de sécurité d’application.**
+4. Sélectionnez l’onglet **Groupes de sécurité d’application**, puis sélectionnez **Configurer les groupes de sécurité d’application**
 
-   ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/71354544-7b61-4c91-9c40-fb2c596d17e0)
+5. Dans le modèle **Configurer les groupes de sécurité d’application**, sélectionnez **asg-mgmt** dans le menu déroulant **Groupes de sécurité d’application**, puis cliquez sur l’icône **Enregistrer** en haut de la page du modèle.
 
-5. Dans **Ajouter des groupes de sécurité d’application,** sélectionnez **asg-web.** dans la liste des noms des **groupes de sécurité d’application**, puis sélectionnez **Ajouter.**
+![image](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
 
-6. Répétez les étapes précédentes pour **vm-2**, en sélectionnant **asg-mgmt** dans le menu déroulant **Groupes de sécurité d’application**.
+6. Répétez les étapes précédentes pour **vm-2**, en sélectionnant **asg-web** dans le menu déroulant **Groupes de sécurité d’application**.
 
 > **Résultats** : vous avez créé une infrastructure de réseau virtuel et filtré le trafic réseau avec un groupe de sécurité réseau via le portail Azure.
 
