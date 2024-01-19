@@ -8,7 +8,7 @@ lab:
 >**Remarque** : pour suivre ce labo, vous devez disposer d’un [abonnement Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) où vous disposez de droits d’accès administratif. 
 
 
-Vous pouvez utiliser le portail Azure pour configurer les paramètres de mise en réseau Azure Key Vault, en vue de leur emploi avec d’autres applications et services Azure. 
+Vous pouvez utiliser le portail Microsoft Azure pour la configuration des paramètres de mise en réseau d’Azure Key Vault pour un fonctionnement avec d’autres applications et services Azure. 
 
 ---
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser le portail Azure pour configurer les paramètres de mise en
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Groupe de ressources|Entrez **azure-rg-1.** Sélectionnez **OK**.|
+   |Resource group|Entrez **azure-rg-1.** Sélectionnez **OK**.|
    |**Détails de l’instance**|
    |Nom du coffre de clés|Entrez **AZAPLKeyVault.**|
    |Région|Sélectionnez **USA Est**.|
