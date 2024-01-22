@@ -26,7 +26,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
 
 ### Créez un groupe de ressources et un réseau virtuel.
 
->**** : l’hôte bastion sera utilisé pour se connecter de façon sécurisée à la machine virtuelle afin de tester le point de terminaison privé.
+>**Remarque** : L’hôte bastion sera utilisé pour se connecter de façon sécurisée à la machine virtuelle afin de tester le point de terminaison privé.
 
 1. Démarrez une session de navigateur et connectez-vous au [menu du Portail Azure.](https://portal.azure.com/)
    
@@ -43,36 +43,45 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Resource group|Sélectionnez **Créer nouveau**. Entrez **CreateSQLEndpointTutorial.** Sélectionnez **OK**.|
    |**Détails de l’instance**|
    |Nom du réseau virtuel|Entrez **myVNet1a.**|
-   |Région|Sélectionnez **USA Est**.|  
+   |Région|Sélectionnez **(États-Unis) USA Est**.|  
     
-5. Sélectionnez l’onglet **Adresses IP**, ou sélectionnez le bouton **Suivant : Adresses IP** au bas de la page.
+5. Sélectionnez **Suivant** pour passer à l’onglet **Sécurité**.
+  
+6. Sélectionnez **Activer Azure Bastion** dans la section Azure Bastion de l’onglet Sécurité.
 
-6. Sous l’onglet **Adresses IP**, entrez les informations suivantes :
+   >**Remarque** : Azure Bastion utilise votre navigateur pour vous connecter à des machines virtuelles dans votre réseau virtuel via un Secure Shell (SSH) ou un protocole RDP (Remote Desktop Protocol) à l’aide de leurs adresses IP privées. Les machines virtuelles ne requièrent pas d’adresse IP publique, de logiciel client ou de configuration spéciale.
+
+7. Entrez ou sélectionnez les informations suivantes dans le champ **nom d’hôte Azure Bastion** :
 
    |Paramètre|Valeur|
    |---|---|
-   |Espace d’adressage IPv4|Entrez **10.1.0.0/16**.|
+   |Nom d’hôte Azure Bastion|Entrez **mybastionhost**|
+   |Nom d’adresse IP publique Azure Bastion|Sélectionner **Créer une adresse IP publique**|
+   |Ajouter une adresse IP publique|Entrer **my-bstn-public-ip**|
+   |SKU|Conservez la valeur par défaut **Standard**.|
+   
+8. Cliquez sur **OK**.
 
-7. Sous **Nom de sous-réseau**, sélectionnez le mot **par défaut**.
+9. Sélectionnez **Suivant** pour passer à l’onglet **Sécurité**.
 
-8. Dans **Modifier le sous-réseau**, entrez les informations suivantes :
+10. Sélectionnez **Suivant** pour passer à l’onglet **adresses IP**.
+
+11. Dans la zone d’espace d’adressage de la colonne Sous-réseaux, sélectionnez le mot sous-réseau **par défaut** .
+
+12. Dans le modèle **Modifier sous-réseau**, entrez ou sélectionnez les informations suivantes :
 
    |Paramètre|Valeur|
    |---|---|
-   |Nom du sous-réseau|Entrez **mySubnet1a.**|
-   |Plage d’adresses de sous-réseau|Entrez **10.1.0.0/24**.|
+   |Objectif du sous-réseau|Conservez la valeur par défaut de **Valeur par défaut**.|
+   |Nom|Entrer **mysubnet1a**|
+   |Plage d'adresses IPv4|Conserver la valeur par défaut  de **10.0.0/16**|
+   |Adresse de début|Conserver la valeur par défaut **/24 (256 adresses**|
 
-9. Sélectionnez **Enregistrer**.
+13. Sélectionnez **Enregistrer**.
 
-10. Sélectionnez l'onglet **Sécurité** .
+14. Sélectionnez **Vérifier + créer** dans la partie inférieure de l’écran, puis une fois la validation réussie, sélectionnez **Créer**.
 
-11. Sous **Hôte bastion,** sélectionnez **Activer.** Entrez les informations suivantes :
-    
-    |Paramètre|Valeur|
-    |---|---|
-    |Nom du bastion|Entrez **myBastionHost**.|
-    |Espace d’adressage AzureBastionSubnet|Entrez **10.1.1.0/24**.|
-    |Adresse IP publique|Sélectionnez **Créer nouveau**. Pour **Nom,** entrez **My BastionIP.** Cliquez sur **OK**.| 
+    >**Remarque** : Le déploiement de Bastion peut prendre jusqu’à 15 minutes pour atteindre l’instanciation complète.
  
 ### Créez une machine virtuelle.
 
@@ -147,7 +156,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Emplacement|Sélectionnez **(États-Unis) USA Est**.|
    |**Authentification**|
    |Méthode d'authentification|Sélectionnez **Utiliser l’authentification SQL**.|
-   |Connexion d’administrateur serveur|Entrez **Tenantadmin2.**|
+   |Connexion d’administrateur du serveur|Entrez **Tenantadmin2.**|
    |Mot de passe|Entrez **Superuser#170.**|
    |Confirmez le mot de passe.|Entrez **Superuser#170.**|
 
