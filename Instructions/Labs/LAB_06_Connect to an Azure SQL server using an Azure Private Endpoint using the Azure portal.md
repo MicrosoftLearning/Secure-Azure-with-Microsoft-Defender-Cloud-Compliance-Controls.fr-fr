@@ -99,8 +99,8 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |**Détails de l’instance**|
    |Nom de la machine virtuelle|Entrez **myVM**.|
    |Région|Sélectionnez **(États-Unis) USA Est**.|
-   |Options de disponibilité|Conservez la valeur par défaut **Aucune redondance d’infrastructure requise**.|
-   |Type de sécurité|Conservez la valeur par défaut **Standard**.|
+   |Options de disponibilité|Dans le menu déroulant Zone de disponibilité, sélectionnez **Aucune redondance d’infrastructure requise**.|
+   |Type de sécurité|Dans le menu déroulant Type de sécurité, sélectionnez **Standard**.|
    |Image|Sélectionnez **Windows Server 2022 Datacenter - x64 Gen2**.|
    |Architecture de machine virtuelle|Sélectionnez **x64**.|
    |Exécuter avec la remise Azure Spot|Conservez la valeur par défaut de la case non cochée.|
@@ -189,7 +189,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Resource group|Sélectionnez **CreateSQLEndpointTutorial**.|
    |Emplacement|Sélectionnez **USA Est**.|
    |Name|Entrez **myPrivateSQLendpoint**.|
-   |Sous-ressource cible|Sélectionnez **mysqlserver1a.**|
+   |Sous-ressource cible|Conservez la valeur par défaut **SqlServer**.|
    |**Mise en réseau**|
    |Réseau virtuel|Sélectionnez **myVNet1a.**|
    |Sous-réseau|Sélectionnez **mySubnet1a.**|
