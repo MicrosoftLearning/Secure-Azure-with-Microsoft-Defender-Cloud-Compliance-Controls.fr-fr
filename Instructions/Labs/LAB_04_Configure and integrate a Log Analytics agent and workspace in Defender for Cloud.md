@@ -1,7 +1,7 @@
 ---
 lab:
-  title: "Exercice\_04\_-\_Collecter des données depuis vos charges de travail avec l’agent Log\_Analytics"
-  module: Module 04 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
+  title: "Exercice 04\_:\_Configurer et intégrer un agent Log Analytics et un espace de travail dans Microsoft Defender pour le cloud"
+  module: Module 05 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
 ---
 
 
