@@ -74,7 +74,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |---|---|
    |Objectif du sous-réseau|Conservez la valeur par défaut de **Valeur par défaut**.|
    |Nom|Entrer **mysubnet1a**|
-   |Plage d'adresses IPv4|Conserver la valeur par défaut  de **10.0.0/16**|
+   |Plage d'adresses IPv4|Conservez la valeur par défaut **10.0.0.0**.|
    |Adresse de début|Conserver la valeur par défaut **/24 (256 adresses**|
 
 13. Sélectionnez **Enregistrer**.
