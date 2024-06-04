@@ -40,7 +40,7 @@ Vous pouvez utiliser le portail Microsoft Azure pour la configuration des param�
    |Abonnement|Sélectionnez votre abonnement.|
    |Resource group|Entrez **azure-rg-1.** Sélectionnez **OK**.|
    |**Détails de l’instance**|
-   |Nom du coffre de clés|Entrez **AZAPLKeyVault.**|
+   |Nom du coffre de clés|Le nom de coffre doit contenir uniquement des caractères alphanumériques et des tirets et ne peut pas commencer par un chiffre.|
    |Région|Sélectionnez **USA Est**.|
    |Niveau tarifaire|Valeur système par défaut **Standard**|
    |Jours de conservation des coffres supprimés|Valeur système par défaut **90**|
