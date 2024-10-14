@@ -55,11 +55,9 @@ Vous pouvez utiliser un groupe de sécurité réseau pour filtrer le trafic rés
   
 6. Sélectionnez **Suivant** pour passer à l’onglet **Adresses IP**.
 
-7. Dans la zone Espace d’adressage de **Sous-réseaux**, sélectionnez le sous-réseau **par défaut**.
+7. Dans la zone Espace d’adressage sous **Sous-réseaux**, sélectionnez le sous-réseau **par défaut**.
 
-8. Dans la zone Espace d’adressage de **Sous-réseaux,** sélectionnez le sous-réseau par défaut.
-
-9. Dans **Modifier le sous-réseau**, entrez ou sélectionnez les informations suivantes :
+8. Dans le modèle **Modifier sous-réseau**, entrez ou sélectionnez les informations suivantes :
 
    |Paramètre|Valeur|
    |---|---|
@@ -71,10 +69,9 @@ Vous pouvez utiliser un groupe de sécurité réseau pour filtrer le trafic rés
 
 ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
 
+9. Sélectionnez **Enregistrer**.
 
-10. Sélectionnez **Enregistrer**.
-
-11. Sélectionnez **Vérifier + créer** dans la partie inférieure de l’écran, puis une fois la validation réussie, sélectionnez **Créer**.
+10. Sélectionnez **Vérifier + créer** dans la partie inférieure de l’écran, puis une fois la validation réussie, sélectionnez **Créer**.
 
 ### La création de groupes de sécurité d’application vous permet de regrouper des serveurs avec des fonctions similaires, tels que des serveurs Web.
 
@@ -149,7 +146,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
 
 3. Dans la section **Paramètres** de **nsg-1**, sélectionnez **Sous-réseaux**.
 
-4. Dans la page **Sous-réseaux**, sélectionnez **+ Associer** :
+4. Dans la page **nsg-1 | Sous-réseaux**, sélectionnez + **Associer :**
 
  ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/3b2004f6-963f-43df-9d05-3999d2e97d76)
 
@@ -161,7 +158,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
 
 1. Dans la section **Paramètres** de **nsg-1**, sélectionnez **Règles de sécurité de trafic entrant**.
    
-2. Dans la page **Règles de sécurité de trafic entrant**, sélectionnez **+ Ajouter** :
+2. Dans la page **nsg-1 | Règles de sécurité de trafic entrant**, sélectionnez + **Ajouter :**
 
 3. Créez une règle de sécurité qui autorise les ports 80 et 443 dans le groupe de sécurité d’application **asg-web**. Dans la page **Ajouter une règle de sécurité de trafic entrant**, entrez ou sélectionnez les informations suivantes :
 
@@ -229,7 +226,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
  
 4. Sélectionnez **Suivant : disques**, puis **Suivant : mise en réseau.
 
-5. Sous l’onglet **Mise en réseau**, entrez ou sélectionnez les informations suivantes :
+5. Sous l’onglet **Mise en réseau**, vérifiez ou entrez les informations suivantes :
 
    |Paramètre|Valeur|
    |---|---|

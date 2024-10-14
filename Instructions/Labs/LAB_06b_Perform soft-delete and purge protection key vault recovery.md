@@ -28,11 +28,11 @@ La protection contre le vidage vise à éviter la suppression de votre coffre de
    
 2. Sélectionnez votre coffre de clés.
 
-3. Cliquez sur le panneau **Propriétés**.
+3. Dans le panneau **Paramètres**, sélectionnez **Propriétés**.
 
-4. Vérifiez si la case d’option en regard de l’option de suppression réversible est paramétrée sur **Activer la protection contre le vidage.**
+4. Vérifiez si la case d’option en regard de la suppression réversible est définie sur **Activer la protection contre le vidage (appliquer une période de rétention obligatoire pour les coffres et les objets de coffre supprimés).**
 
-5. Si la suppression réversible n’est pas activée sur le coffre de clés, cliquez sur la case d’option pour activer la suppression réversible, puis sur **Enregistrer.**
+5. Si la suppression réversible n’est pas activée sur le coffre de clés, cliquez sur la case d’option **Activer la protection contre le vidage (appliquer une période de rétention obligatoire pour les coffres et les objets de coffre supprimés)** pour activer la suppression réversible, puis cliquez sur **Enregistrer.**
 
 ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/06131a60-7f00-4764-a424-87ea41a78394)
 
@@ -45,7 +45,7 @@ La protection contre le vidage vise à éviter la suppression de votre coffre de
 
 3. Recherchez le service **Key Vault**. Ne cliquez pas sur un coffre de clés individuel.
 
-4. En haut de l’écran, cliquez sur l’option « Gérer les coffres supprimés ».
+4. En haut de l’écran, cliquez sur l’option **Gérer les coffres supprimés.**
 
 5. Un volet contextuel s’ouvre sur le côté droit de l’écran.
 

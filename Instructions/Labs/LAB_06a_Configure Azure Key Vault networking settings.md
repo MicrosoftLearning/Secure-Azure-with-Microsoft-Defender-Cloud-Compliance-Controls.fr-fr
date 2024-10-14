@@ -55,14 +55,16 @@ Vous pouvez utiliser le portail Microsoft Azure pour la configuration des param�
 
 2. Accédez au coffre de clés que vous avez créé précédemment.
 
-3. Sélectionnez **Mise en réseau**, puis l’onglet **Pare-feu et réseaux virtuels**.
-
+3. Sélectionnez **Paramètres**, puis **Mise en réseau**, puis l’onglet **Pare-feux et réseaux virtuels**.
+   
 4. Sous Autoriser l’accès à partir de, sélectionnez **Autoriser l’accès public à partir de réseaux virtuels et d’adresses IP spécifiques.**
 
 5. Dans la section Réseaux virtuels, sélectionnez + **Ajouter un réseau virtuel,** puis sélectionnez + **Ajouter des réseaux virtuels existants.**
 
 6. Dans le modèle Ajouter des réseaux, sélectionnez votre réseau virtuel créé précédemment dans les listes déroulantes **Réseaux virtuels** et **Sous-réseaux**.
 
-7. Au bas du modèle Ajouter des réseaux, cliquez sur **Ajouter.**
+7. Au bas du modèle **Ajouter des réseaux**, cliquez sur **Ajouter.**
+
+8. En bas de l’onglet **Pare-feux et réseaux virtuels**, sélectionnez **Appliquer.**
 
   > **Résultats** : vous avez créé un coffre de clés et configuré des paramètres de pare-feu et de réseau virtuel Key Vault sur le portail Azure.
