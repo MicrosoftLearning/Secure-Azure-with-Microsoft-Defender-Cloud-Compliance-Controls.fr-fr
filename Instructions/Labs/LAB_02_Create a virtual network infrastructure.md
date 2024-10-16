@@ -132,9 +132,9 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |Nom|Entrez **nsg-1**.|
    |Région|Sélectionnez **USA Est**.|  
     
-4. Sélectionnez **Examiner**  + créer**.
+4. Sélectionnez **Revoir + créer**.
 
-5. Sélectionnez **Create** (Créer).
+5. Sélectionnez **Créer**.
 
 ### Associer le groupe de sécurité réseau au sous-réseau
 
