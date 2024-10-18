@@ -45,7 +45,7 @@ Vous pouvez utiliser un groupe de sécurité réseau pour filtrer le trafic rés
    |Paramètre|Valeur|
    |---|---|
    |**Détails du projet**|
-   |Abonnement|Sélectionnez votre abonnement.|
+   |Abonnement|Sélectionnez votre abonnement|
    |Resource group|Sélectionnez **Créer nouveau**, entrez **az-rg-1,**, puis sélectionnez **OK**.|
    |**Détails de l’instance**|
    |Nom du réseau virtuel|Entrez **vnet-1**|
@@ -86,7 +86,7 @@ Un groupe de sécurité d’application vous permet de regrouper des serveurs do
    |Paramètre|Valeur|
    |---|---|
    |**Détails du projet**|
-   |Abonnement|Sélectionnez votre abonnement.|
+   |Abonnement|Sélectionnez votre abonnement|
    |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **asg-web**.|
@@ -101,7 +101,7 @@ Un groupe de sécurité d’application vous permet de regrouper des serveurs do
    |Paramètre|Valeur|
    |---|---|
    |**Détails du projet**|
-   |Abonnement|Sélectionnez votre abonnement.|
+   |Abonnement|Sélectionnez votre abonnement|
    |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **asg-mgmt**.|
@@ -126,7 +126,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |Paramètre|Valeur|
    |---|---|
    |**Détails du projet**|
-   |Abonnement|Sélectionnez votre abonnement.|
+   |Abonnement|Sélectionnez votre abonnement|
    |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **nsg-1**.|
