@@ -1,7 +1,7 @@
 ---
 lab:
-  title: "Exercice 03\_: créer un espace de travail Log Analytics pour Microsoft Defender pour le cloud"
-  module: Module 04 - Create a Log Analytics workspace for Microsoft Defender for Cloud
+  title: Exercice 03 - Créer un espace de travail Log Analytics
+  module: Module 04 - Create a Log Analytics workspace
 ---
 
 
@@ -24,7 +24,7 @@ Lorsque vous collectez des journaux et des données, les informations sont stock
 
 1. Démarrez une session de navigateur et connectez-vous au [menu du Portail Azure.](https://portal.azure.com/)
    
-2. Dans le menu du portail Azure, dans la zone de recherche, entrez **espaces de travail Log Analytics**. Au fur et à mesure de la saisie, la liste est filtrée. Sélectionnez **Espaces de travail Log Analytics**.
+2. Dans le menu du portail Azure, dans la zone de recherche, saisissez **espaces de travail Log Analytics**. Au fur et à mesure de la saisie, la liste est filtrée. Sélectionnez **Espaces de travail Log Analytics**.
 
 4. Sélectionnez **Créer**.
 
@@ -43,4 +43,4 @@ Lorsque vous collectez des journaux et des données, les informations sont stock
   
 8. Sélectionnez **Créer**.
 
-> **Résultats :** vous avez créé un espace de travail Log Analytics pour collecter des données à partir de ressources Azure, ainsi que des diagnostics ou des données de journal depuis Stockage Azure.
+> **Résultats :** vous avez créé un espace de travail Log Analytics pour collecter des données à partir de ressources Azure.
