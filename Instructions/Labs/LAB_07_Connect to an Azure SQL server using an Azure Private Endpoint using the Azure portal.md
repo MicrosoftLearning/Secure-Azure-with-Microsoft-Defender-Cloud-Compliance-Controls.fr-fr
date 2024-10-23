@@ -69,18 +69,18 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
     |Paramètre|Valeur|
     |---|---|
     |**Détails du projet**|
-    |Objectif du sous-réseau|Laissez le paramètre par défaut.|
+    |Objectif du sous-réseau|Utilisez le paramètre par défaut « Par défaut ».|
     |Nom|**subnet-2**|
     |Plage d'adresses IPv4|Utilisez le paramètre par défaut « 10.0.0.0/16 ».|
     |Adresse de début|Utilisez le paramètre par défaut « /24 » (256 adresses).|
 
 13. En bas de la page **Modifier le sous-réseau**, sélectionnez **Enregistrer**.
 
-14. En bas de la page **Adresses IP**, sélectionnez **Vérifier et créer**.
+14. En bas de la page **Adresses IP**, sélectionnez **Examiner et créer**.
 
     >**Remarque** : Le déploiement de Bastion peut prendre jusqu’à 15 minutes pour atteindre l’instanciation complète.
 
-15. En bas de la page **Vérifier et créer**, sélectionnez **Créer**.
+15. En bas de la page **Examiner et créer**, sélectionnez **Créer**.
  
 ### Créez une machine virtuelle.
 

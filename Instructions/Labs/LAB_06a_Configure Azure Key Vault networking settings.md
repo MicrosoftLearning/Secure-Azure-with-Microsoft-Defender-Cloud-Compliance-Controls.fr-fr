@@ -38,9 +38,9 @@ Vous pouvez utiliser le portail Microsoft Azure pour la configuration des param�
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Entrez **azure-rg-1.** Sélectionnez **OK**.|
+   |Resource group|Entrez **azure-rg-1.**|
    |**Détails de l’instance**|
-   |Nom du coffre de clés|Le nom du coffre doit contenir uniquement des caractères alphanumériques et des tirets, et ne peut pas commencer par un chiffre. *Exemple : az-securevault150*|
+   |Nom du coffre de clés|Le nom du coffre doit contenir uniquement des caractères alphanumériques et des tirets, et ne doit pas commencer par un chiffre. *Exemple : az-securevault150*|
    |Région|Sélectionnez **USA Est**.|
    |Niveau tarifaire|Utilisez le paramètre par défaut « Standard ».|
    |Jours de conservation des coffres supprimés|Utilisez le paramètre par défaut « 90 ».|

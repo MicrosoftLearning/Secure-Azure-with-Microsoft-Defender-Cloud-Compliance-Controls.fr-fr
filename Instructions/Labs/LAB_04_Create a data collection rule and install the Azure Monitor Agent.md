@@ -1,14 +1,14 @@
 ---
 lab:
   title: "Exercice\_04\_: créer une règle de collecte de données et installer l’agent Azure Monitor"
-  module: Module 05 - Create a data collection rule and install the Azure Monitor Agent
+  module: Module 05 - Collect guest operating system monitoring data from Azure and hybrid virtual machines using Azure Monitor Agent
 ---
 
 
 >**Remarque** : pour suivre ce labo, vous devez disposer d’un [abonnement Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) où vous disposez de droits d’accès administratif. 
 
 
-Les règles de collecte de données spécifient les données à collecter, tandis que l’agent Azure Monitor applique ces règles pour collecter des journaux et des métriques à partir de machines virtuelles dans Azure, d’autres clouds ou localement. Ensemble, elles permettent une surveillance cohérente et centralisée dans différents environnements.
+Les règles de collecte de données spécifient les données à collecter, tandis que l’agent Azure Monitor applique ces règles pour collecter des journaux et des métriques à partir de machines virtuelles dans Azure, d’autres clouds ou localement. Ensemble, ils permettent une surveillance cohérente et centralisée dans différents environnements.
 
 ---
 
@@ -24,7 +24,7 @@ Les règles de collecte de données spécifient les données à collecter, tandi
 
 - Sélectionner les types de sources de données et les données à collecter
 
-- Choisir une destination de remise des données
+- Choisr une destination de remise des données
 
 ## Instructions de l’exercice 
 
@@ -72,7 +72,7 @@ Les règles de collecte de données spécifient les données à collecter, tandi
 
     ![image](https://github.com/user-attachments/assets/0809cf5b-a460-40d1-8508-e42ba7ce78c1)
 
-10. Dans le modèle **Ajouter une source de données**, sous **Type de source de données**, sélectionnez les paramètres suivants.
+10. Dans le modèle **Ajouter une source de données**, dans **Type de source de données**, sélectionnez les paramètres suivants.
     
     |Paramètre|Valeur|
     |---|---|
@@ -105,10 +105,10 @@ Les règles de collecte de données spécifient les données à collecter, tandi
 
     ![image](https://github.com/user-attachments/assets/4277089c-971c-4334-a49d-6ac6bfe93ff4)
 
-15. En bas de la page **Collecter et remettre**, sélectionnez **Vérifier et créer**.
+15. En bas de la page **Collecter et remettre**, sélectionnez **Examiner et créer**.
 
     ![image](https://github.com/user-attachments/assets/0235fed9-6309-444c-9269-b9dbd1118b63)
 
-16. En bas de la page **Vérifier et créer**, sélectionnez **Créer**.
+16. En bas de la page **Examiner et créer**, sélectionnez **Créer**.
 
 > **Résultats** : vous avez créé une règle de collecte de données et installé l’agent Azure Monitor.
