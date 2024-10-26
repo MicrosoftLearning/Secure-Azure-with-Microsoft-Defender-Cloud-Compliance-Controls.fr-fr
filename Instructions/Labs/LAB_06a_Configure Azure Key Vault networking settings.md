@@ -38,12 +38,12 @@ Vous pouvez utiliser le portail Microsoft Azure pour la configuration des param�
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Entrez **azure-rg-1.** Sélectionnez **OK**.|
+   |Resource group|Entrez **azure-rg-1.**|
    |**Détails de l’instance**|
-   |Nom du coffre de clés|Le nom de coffre doit contenir uniquement des caractères alphanumériques et des tirets et ne peut pas commencer par un chiffre.|
+   |Nom du coffre de clés|Le nom du coffre doit contenir uniquement des caractères alphanumériques et des tirets, et ne doit pas commencer par un chiffre. *Exemple : az-securevault150*|
    |Région|Sélectionnez **USA Est**.|
-   |Niveau tarifaire|Valeur système par défaut **Standard**|
-   |Jours de conservation des coffres supprimés|Valeur système par défaut **90**|
+   |Niveau tarifaire|Utilisez le paramètre par défaut « Standard ».|
+   |Jours de conservation des coffres supprimés|Utilisez le paramètre par défaut « 90 ».|
 
 7. Sélectionnez l’**onglet Vérifier + créer** ou sélectionnez le bouton bleu Vérifier + créer en bas de la page.
   
@@ -61,10 +61,10 @@ Vous pouvez utiliser le portail Microsoft Azure pour la configuration des param�
 
 5. Dans la section Réseaux virtuels, sélectionnez + **Ajouter un réseau virtuel,** puis sélectionnez + **Ajouter des réseaux virtuels existants.**
 
-6. Dans le modèle Ajouter des réseaux, sélectionnez votre réseau virtuel créé précédemment dans les listes déroulantes **Réseaux virtuels** et **Sous-réseaux**.
+6. Dans le modèle **Ajouter des réseaux**, sélectionnez le réseau virtuel que vous avez créé précédemment dans les listes déroulantes **Réseaux virtuels** et **Sous-réseaux**.
 
-7. Au bas du modèle **Ajouter des réseaux**, cliquez sur **Ajouter.**
+7. Au bas du modèle **Ajouter des réseaux**, sélectionnez **Activer**, puis cliquez sur **Ajouter**. 
 
-8. En bas de l’onglet **Pare-feux et réseaux virtuels**, sélectionnez **Appliquer.**
+8. En bas de la page **Pare-feux et réseaux virtuels**, sélectionnez **Appliquer**.
 
   > **Résultats** : vous avez créé un coffre de clés et configuré des paramètres de pare-feu et de réseau virtuel Key Vault sur le portail Azure.
