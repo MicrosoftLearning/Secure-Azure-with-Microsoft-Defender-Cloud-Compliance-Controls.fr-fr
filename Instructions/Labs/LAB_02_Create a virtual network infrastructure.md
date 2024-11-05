@@ -63,13 +63,15 @@ Vous pouvez utiliser un groupe de sécurité réseau pour filtrer le trafic rés
    |Objectif du sous-réseau|Utilisez le paramètre par défaut « Par défaut ».|
    |Nom|Entrez **subnet-1**.|
    |Adresse de début|Utilisez le paramètre par défaut « 10.0.0.0/16 ».|
-   |Taille du sous-réseau|Utilisez le paramètre par défaut « /24 » (256 adresses).
+   |Taille du sous-réseau|Utilisez le paramètre par défaut « /24 » (256 adresses).
 
-![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
+   ![image](https://github.com/user-attachments/assets/4c5834f8-459f-4063-bd82-3e65237c6b1d)
 
-9. Sélectionnez **Enregistrer**.
+10. Sélectionnez **Enregistrer**.
 
-10. Sélectionnez **Vérifier + créer** dans la partie inférieure de l’écran, puis une fois la validation réussie, sélectionnez **Créer**.
+11. Sélectionnez **Vérifier + créer** dans la partie inférieure de l’écran, puis une fois la validation réussie, sélectionnez **Créer**.
+
+    ![image](https://github.com/user-attachments/assets/4fd02061-2349-42c4-8582-c7178f9b7eb6)
 
 ### La création de groupes de sécurité d’application vous permet de regrouper des serveurs avec des fonctions similaires, tels que des serveurs Web.
 
@@ -103,7 +105,7 @@ Un groupe de sécurité d’application vous permet de regrouper des serveurs do
    |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **asg-mgmt**.|
-   |Région|Sélectionnez **(États-Unis) USA Est**.|
+   |Région|Sélectionnez **USA Est**.|
 
 7. Sélectionnez **Revoir + créer**.
 

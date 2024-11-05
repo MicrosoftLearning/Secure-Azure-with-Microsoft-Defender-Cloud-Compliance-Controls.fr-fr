@@ -24,7 +24,7 @@ Lorsque vous collectez des journaux et des données, les informations sont stock
 
 1. Démarrez une session de navigateur et connectez-vous au [menu du Portail Azure.](https://portal.azure.com/)
    
-2. Dans le menu du portail Azure, dans la zone de recherche, entrez **espaces de travail Log Analytics**. Au fur et à mesure de la saisie, la liste est filtrée. Sélectionnez **Espaces de travail Log Analytics**.
+2. Dans le menu du portail Azure, dans la zone de recherche, saisissez **espaces de travail Log Analytics**. Au fur et à mesure de la saisie, la liste est filtrée. Sélectionnez **Espaces de travail Log Analytics**.
 
 4. Sur la page **Espaces de travail Log Analytics**, sélectionnez **+ Créer**.
 

@@ -1,6 +1,6 @@
 ---
 lab:
-  title: "Exercice\_04\_: créer une règle de collecte de données et installer l’agent Azure Monitor"
+  title: "Exercice\_04\_- Créer une règle de collecte de données et installer l’agent Azure Monitor"
   module: Module 05 - Collect guest operating system monitoring data from Azure and hybrid virtual machines using Azure Monitor Agent
 ---
 
@@ -8,23 +8,23 @@ lab:
 >**Remarque** : pour suivre ce labo, vous devez disposer d’un [abonnement Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) où vous disposez de droits d’accès administratif. 
 
 
-Les règles de collecte de données spécifient les données à collecter, tandis que l’agent Azure Monitor applique ces règles pour collecter des journaux et des métriques à partir de machines virtuelles dans Azure, d’autres clouds ou localement. Ensemble, ils permettent une surveillance cohérente et centralisée dans différents environnements.
+Les règles de collecte de données spécifient les données à collecter, tandis que l’agent Azure Monitor applique ces règles pour collecter des journaux et des mesures à partir de machines virtuelles dans Azure, d’autres clouds ou localement. Ensemble, elles permettent une surveillance cohérente et centralisée dans différents environnements.
 
 ---
 
 ## Tâches d'apprentissage
 
-- Créer et définir une règle de collecte de données
+- Créer et définir une règle de collecte de données.
 
-- Sélectionner les ressources cibles pour la collecte de données
+- Sélectionner les ressources cibles pour la collecte de données.
 
 - Installez l’agent Azure Monitor.
   
-- Configurer les sources et destinations de données
+- Configurer les sources et les destinations de données.
 
-- Sélectionner les types de sources de données et les données à collecter
+- Sélectionner les types de sources de données et les données à collecter.
 
-- Choisr une destination de remise des données
+- Choisir une destination de remise des données
 
 ## Instructions de l’exercice 
 

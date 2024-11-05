@@ -38,7 +38,6 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    
    |Paramètre|Valeur|
    |---|---|
-   |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
    |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
@@ -49,38 +48,39 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
   
 6. Sélectionnez **Activer Azure Bastion** dans la section Azure Bastion de l’onglet Sécurité.
 
-   >**Remarque** : Azure Bastion est un service payant qui fournit une connectivité RDP/SSH sécurisée à vos machines virtuelles via TLS. Lorsque vous vous connectez via Azure Bastion, vos machines virtuelles n’ont pas besoin d’une adresse IP publique. 
+>**Remarque** : Azure Bastion est un service payant qui fournit une connectivité RDP/SSH sécurisée à vos machines virtuelles via TLS. Lorsque vous vous connectez via Azure Bastion, vos machines virtuelles n’ont pas besoin d’une adresse IP publique. 
 
 7. Saisissez ou sélectionnez les informations suivantes dans le champ **Azure Bastion** :
 
    |Paramètre|Valeur|
    |---|---|
-   |**Détails du projet**|
    |Hôte Azure Bastion |Saisissez **az-bastionhost-1a**.|
    |Nom d’adresse IP publique Azure Bastion|Sélectionner **Créer une adresse IP publique**|
    |Ajouter une adresse IP publique|Sélectionnez **OK**.|
 
-9. Sélectionnez **Suivant** pour passer à l’onglet **adresses IP**.
+8. Sélectionnez **Suivant** pour passer à l’onglet **adresses IP**.
 
-10. Dans la zone d’**espace d’adressage IPv4** configurée existante dans la colonne **Sous-réseaux**, cliquez sur l’entrée **par défaut**.
+9. Dans la zone d’**espace d’adressage IPv4** configurée existante dans la colonne **Sous-réseaux**, cliquez sur l’entrée **par défaut**.
 
-11. Dans le modèle **Modifier sous-réseau**, entrez ou sélectionnez les informations suivantes :
+10. Dans le modèle **Modifier sous-réseau**, entrez ou sélectionnez les informations suivantes :
 
     |Paramètre|Valeur|
     |---|---|
-    |**Détails du projet**|
     |Objectif du sous-réseau|Utilisez le paramètre par défaut « Par défaut ».|
     |Nom|**subnet-2**|
+    |Inclure un espace d’adressage IPv4|Laissez le paramètre par défaut coché.|
     |Plage d'adresses IPv4|Utilisez le paramètre par défaut « 10.0.0.0/16 ».|
-    |Adresse de début|Utilisez le paramètre par défaut « /24 » (256 adresses).|
+    |Adresse de début|10.0.0.0.|
+    |Taille|Utilisez le paramètre par défaut « /24 » (256 adresses).|
+    |Plage d’adresses de sous-réseau|10.0.0.0-10.0.0.255.|
 
-13. En bas de la page **Modifier le sous-réseau**, sélectionnez **Enregistrer**.
+11. En bas de la page **Modifier le sous-réseau**, sélectionnez **Enregistrer**.
 
-14. En bas de la page **Adresses IP**, sélectionnez **Examiner et créer**.
+12. En bas de la page **Adresses IP**, sélectionnez **Examiner et créer**.
 
-    >**Remarque** : Le déploiement de Bastion peut prendre jusqu’à 15 minutes pour atteindre l’instanciation complète.
+13. En bas de la page **Examiner et créer**, sélectionnez **Créer**.
 
-15. En bas de la page **Examiner et créer**, sélectionnez **Créer**.
+>**Remarque** : Le déploiement de Bastion peut prendre jusqu’à 15 minutes pour atteindre l’instanciation complète.
  
 ### Créez une machine virtuelle.
 
@@ -94,7 +94,6 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
 
    |Paramètre|Valeur|
    |---|---|
-   |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
    |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
@@ -111,11 +110,12 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Mot de passe|Entrez **Superuser#170.**|
    |Confirmer le mot de passe|Ressaisissez **Superuser#170.**|
    |**Règles des ports d’entrée**|
-   |Sélectionner des ports d’entrée|Sélectionnez **Aucun**.|
+   |Aucun port d’entrée public|Sélectionnez **Aucun**.|
+   |Sélectionner des ports d’entrée|Le paramètre par défaut est grisé.|
 
-5. Sélectionnez **Suivant : Disques**, puis **Suivant : Réseaux**.
+4. Sélectionnez **Suivant : Disques**, puis **Suivant : Réseaux**.
   
-6. Sur la page **Mise en réseau**, saisissez ou sélectionnez les informations suivantes :
+5. Sur la page **Mise en réseau**, saisissez ou sélectionnez les informations suivantes :
 
    |Paramètre|Valeur|
    |---|---|
@@ -125,7 +125,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Adresse IP publique|Sélectionnez **Aucun**.|
    |Groupe de sécurité réseau de la carte réseau|Sélectionnez **De base**.|
    |Aucun port d’entrée public|Sélectionnez **Aucun**.|
-   |Sélectionner des ports d’entrée|Laissez la valeur par défaut vide.|
+   |Sélectionner des ports d’entrée|Le paramètre par défaut est grisé.|
    |Supprimer la carte réseau lors de la suppression de la machine virtuelle|Laissez le paramètre par défaut « Activer la mise en réseau accélérée » coché.|
    |Équilibrage de charge|Utilisez le paramètre par défaut « Aucun ».|
   
@@ -145,21 +145,22 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
 
    |Paramètre|Valeur|
    |---|---|
-   |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
    |Resource group|Sélectionnez **az-rg-1**.|
    |**Détails de la base de données**|
    |Nom de la base de données|Saisissez **az-sql-db1a**.|
-   |Nom du serveur|Saisissez **az-sql-svr1a**. Si ce nom est utilisé, créez un nom unique.|
-   |Emplacement|Sélectionnez **(États-Unis) USA Est**.|
+   |Serveur|Sélectionnez **Créer nouveau**.|
+   |**Détails du serveur**|
+   |Nom du serveur|Saisissez **az-sql-svr1a**.|
+   |Emplacement|Utilisez le paramètre par défaut « USA Est ».|
    |**Authentification**|
-   |Méthode d'authentification|Sélectionnez **Utiliser l’authentification SQL**.|
+   |Méthode d'authentification|Sélectionnez **Utiliser l’authentification SQL**.|  
    |Connexion d’administrateur du serveur|Entrez **Tenantadmin2.**|
    |Mot de passe|Entrez **Superuser#170.**|
    |Confirmez le mot de passe.|Entrez **Superuser#170.**|
 
 4. Cliquez sur **OK**.
-   
+    
    |Paramètre|Valeur|
    |---|---|
    |**Détails de la base de données**|
@@ -180,9 +181,13 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Stratégie de connexion|Laissez le paramètre par défaut sur « Par défaut » - Utilise la stratégie de redirection pour toutes les connexions client provenant d’Azure (sauf les connexions de points de terminaison privés) et un proxy pour toutes les connexions client provenant de l’extérieur d’Azure.|
    |Connexions de chiffrement|Utilisez le paramètre par défaut « TLS.12 ».|
 
-7. Sélectionnez **+ Ajouter un point de terminaison privé** dans **Points de terminaison privés**.
+7. Dans la section **Points de terminaison privés**, sélectionnez **+ Ajouter un point de terminaison privé**.
 
-8. Dans **Créer un point de terminaison privé**, entrez ou sélectionnez les informations suivantes :
+8. Sélectionnez **Revoir + créer**.
+
+9. Sélectionnez **Créer**.
+
+10. Dans **Créer un point de terminaison privé**, entrez ou sélectionnez les informations suivantes :
 
    |Paramètre|Valeur|
    |---|---|
@@ -198,63 +203,70 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Intégrer à une zone DNS privée|Utilisez le paramètre par défaut « Oui ».|
    |Zone DNS privée|Utilisez la valeur par défaut (Nouveau) privatelink.database.windows.net.|
 
-9. Cliquez sur **OK**.
+11. Cliquez sur **OK**.
 
-10. Sélectionnez **Revoir + créer**.
+12. Sélectionnez **Revoir + créer**.
 
-11. Sélectionnez **Create** (Créer).
+13. Sélectionnez **Créer**.
 
-### Désactiver l’accès public au serveur logique Azure SQL
+>**Remarque** : le déploiement du serveur Azure SQL et du point de terminaison privé peut prendre jusqu’à 10 minutes pour une instanciation complète.
 
->**Remarque** : pour cette tâche, supposons que vous souhaitez désactiver tout accès public à votre serveur Azure SQL et autoriser uniquement les connexions depuis votre réseau virtuel. Le paramètre **Accès public** peut être défini par défaut sur **Désactivé**.
+### Autoriser certaines adresses IP Internet publiques à accéder à votre serveur logique Azure SQL
 
-1. Dans la zone de recherche du portail Azure, saisissez **az-sql-svr1a** ou le nom du serveur que vous avez saisi lors des étapes précédentes.
+>**Remarque** : pour cette tâche, supposons que vous souhaitez activer l’accès public à votre serveur Azure SQL et autoriser uniquement les connexions depuis votre réseau virtuel. Le paramètre Accès public peut être défini par défaut sur **Désactivé**.
 
-2. Sélectionnez **Mise en réseau** dans la section **Sécurité** d’**az-sql-svr1a**. Dans la page **Mise en réseau**, sélectionnez l’onglet **Accès public**, puis **Désactiver** pour l’**Accès au réseau public**.
+1. Dans la zone de recherche du portail Azure, saisissez **az-sql-srv1a** ou le nom du serveur que vous avez saisi lors des étapes précédentes.
+   
+2. Sélectionnez **Mise en réseau** dans la section **Sécurité** d’**az-sql-svr1a**.
+  
+3. Sur la page **Mise en réseau**, sélectionnez l’onglet **Accès public**.
+  
+4. Vérifiez si **Accès au réseau public** est désactivé. S’il est désactivé, sélectionnez **Réseaux sélectionnés** pour Accès au réseau public.
 
-   ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/44ff5c24-70cf-49ed-b2ab-5e210c478b3a)
+>**Remarque** : les connexions provenant des adresses IP configurées dans la section Règles du pare-feu ci-dessous auront accès à cette base de données. Par défaut, aucune adresse IP publique n’est autorisée.
 
-3. Sélectionnez **Enregistrer**.
+5. Si nécessaire, accédez à la section **Règles du pare-feu** de la page **Mise en réseau**, puis sélectionnez **+ Ajouter l’adresse IPv4 de votre client** si l’adresse IP de votre client n’est pas déjà renseignée dans les champs **Nom de la règle**, **Adresse IPv4 de début** et **Adresse IPv4 de fin**.
+    
+     ![image](https://github.com/user-attachments/assets/dfdeffca-d33f-44e1-81db-9f68a51f89df)
+
+6. Si nécessaire, sélectionnez **Enregistrer**.
 
 ### Tester la connectivité au point de terminaison privé
 
 >**Remarque** : dans cette tâche, vous allez utiliser la machine virtuelle que vous avez créée aux étapes précédentes pour vous connecter au serveur SQL Server via le point de terminaison privé.
 
-1. Dans le volet de navigation de gauche, sélectionnez **Groupes de ressources**.
+1. Dans la zone de recherche du portail Azure, tapez **vm-3**, puis sélectionnez-la dans la liste déroulante Ressources.
 
-2. Sélectionnez **az-rg-1**.
+2. Sur la page **Présentation** de vm-3, sélectionnez **Se connecter**, puis **Bastion**.
 
-3. Sélectionnez **vm-3**.
-
-4. Sur la page Vue d’ensemble de **vm-3**, sélectionnez Se connecter, puis **Bastion**.
-
-5. Entrez le nom d’utilisateur **Tenantadmin2** et le mot de passe **Superuser#170** que vous avez utilisés lors de la création de la machine virtuelle.
+3. Entrez le nom d’utilisateur **Tenantadmin2** et le mot de passe **Superuser#170** que vous avez utilisés lors de la création de la machine virtuelle.
 
    **Important :** accédez aux paramètres Edge/fenêtres contextuelles et redirections et basculez le commutateur bloqué sur **désactivé** avant de sélectionner Connecter.
 
-7. Sélectionnez le bouton **Connecter**.
+4. Sélectionnez le bouton **Connecter**.
   
-8. Ouvrez Windows PowerShell sur le serveur après vous être connecté.
+5. Ouvrez Windows PowerShell sur le serveur après vous être connecté.
 
-9. Entrez `nslookup sqlserver-name.database.windows.net.` Remplacez **sqlserver-name** par le nom du serveur SQL Server que vous avez créé aux étapes précédentes. Vous recevez un message similaire à ce qui est montré ci-dessous :
+6. Remplacez **sqlserver-name** par le nom du serveur SQL que vous avez créé dans les étapes précédentes. Par exemple, entrez **nslookup az-sql-srv1a.database.windows.net**. Vous recevrez un message similaire à celui indiqué ci-dessous :
 
-   ````  
+   ````
+   
    Server:  UnKnown
    Address:  168.63.129.16
    
    Non-authoritative answer:
-   Name:    az-sql-svr1a.privatelink.database.windows.net
+   Name:    az-sql-srv1a.privatelink.database.windows.net
    Address:  10.1.0.5
-   Aliases:  az-sql-svr1a.database.windows.net
+   Aliases:  az-sql-srv1a.database.windows.net
    ````
-    
->**Remarque**: une adresse IP privée 10.1.0.5 a été renvoyée pour le nom du serveur SQL Server. Cette adresse se trouve dans le sous-réseau **az-sql-svr1a** du réseau virtuel **vnet-2** que vous avez créé précédemment.
+   
+>**Remarque**: une adresse IP privée 10.1.0.5 a été renvoyée pour le nom du serveur SQL Server. Cette adresse se trouve dans le sous-réseau **az-sql-srv1a** du réseau virtuel **vnet-2** que vous avez créé précédemment.
 
-9. Installez [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&view=sql-server-2017) sur **vm-3**.
+7. Installez [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) sur **vm-3**.
  
-10. Ouvrez **SQL Server Management Studio**.
+8. Ouvrez **SQL Server Management Studio**.
 
-11. Dans **Se connecter au serveur**, entrez ou sélectionnez les informations suivantes :
+9. Dans **Se connecter au serveur**, entrez ou sélectionnez les informations suivantes :
 
     |Paramètre|Valeur|
     |---|---|
@@ -267,10 +279,10 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
     |Sécurisation de la connectivité|
     |Chiffrement|Utilisez le paramètre par défaut « Obligatoire ».|
    
-13. Sélectionnez **Connecter**.
+10. Sélectionnez **Connecter**.
 
-14. Parcourez les bases de données dans le menu de gauche.
+11. Parcourez les bases de données dans le menu de gauche.
 
-15. Fermez la connexion du bureau à distance vers vm-3.
+12. Fermez la connexion du bureau à distance vers vm-3.
   
 > **Résultats** : vous vous êtes connecté(e) à un serveur Azure SQL via un point de terminaison privé Azure en utilisant le Portail Azure
