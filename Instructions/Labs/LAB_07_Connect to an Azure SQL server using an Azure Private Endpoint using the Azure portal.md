@@ -121,11 +121,9 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |---|---|
    |**Interface réseau**|
    |Réseau virtuel|Sélectionnez **vnet-2**.|
-   |Sous-réseau|Sélectionnez **subnet-2 (10.0.0.0/24)**.|
-   |Adresse IP publique|Sélectionnez **Aucun**.|
-   |Groupe de sécurité réseau de la carte réseau|Sélectionnez **De base**.|
-   |Aucun port d’entrée public|Sélectionnez **Aucun**.|
-   |Sélectionner des ports d’entrée|Le paramètre par défaut est grisé.|
+   |Sous-réseau|Utilisez le paramètre par défaut subnet-2 (10.0.0.0/24).|
+   |IP publique|Utilisez le paramètre par défaut (new) vm-3-ip.|
+   |Groupe de sécurité réseau de la carte réseau|Utilisez le paramètre par défaut « Aucun ».|
    |Supprimer la carte réseau lors de la suppression de la machine virtuelle|Laissez le paramètre par défaut « Activer la mise en réseau accélérée » coché.|
    |Équilibrage de charge|Utilisez le paramètre par défaut « Aucun ».|
   
@@ -189,25 +187,25 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
 
 10. Dans **Créer un point de terminaison privé**, entrez ou sélectionnez les informations suivantes :
 
-   |Paramètre|Valeur|
-   |---|---|
-   |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Sélectionnez **az-rg-1**.|
-   |Emplacement|Sélectionnez **USA Est**.|
-   |Nom|Saisissez **az-pe-1a**.|
-   |Sous-ressource cible|Utilisez le paramètre par défaut « SqlServer ».|
-   |**Mise en réseau**|
-   |Réseau virtuel|Sélectionnez **vnet-2**.|
-   |Sous-réseau|Sélectionnez **subnet-2**.|
-   |**Intégration à un DNS privé**|
-   |Intégrer à une zone DNS privée|Utilisez le paramètre par défaut « Oui ».|
-   |Zone DNS privée|Utilisez la valeur par défaut (Nouveau) privatelink.database.windows.net.|
+       |Paramètre|Valeur|
+       |---|---|
+       |Abonnement|Sélectionnez votre abonnement.|
+       |Resource group|Sélectionnez **az-rg-1**.|
+       |Emplacement|Sélectionnez **USA Est**.|
+       |Nom|Saisissez **az-pe-1a**.|
+       |Sous-ressource cible|Utilisez le paramètre par défaut « SqlServer ».|
+       |**Mise en réseau**|
+       |Réseau virtuel|Sélectionnez **vnet-2**.|
+       |Sous-réseau|Sélectionnez **subnet-2**.|
+       |**Intégration à un DNS privé**|
+       |Intégrer à une zone DNS privée|Utilisez le paramètre par défaut « Oui ».|
+       |Zone DNS privée|Utilisez la valeur par défaut (Nouveau) privatelink.database.windows.net.|
 
-11. Cliquez sur **OK**.
+12. Cliquez sur **OK**.
 
-12. Sélectionnez **Revoir + créer**.
+13. Sélectionnez **Revoir + créer**.
 
-13. Sélectionnez **Créer**.
+14. Sélectionnez **Créer**.
 
 >**Remarque** : le déploiement du serveur Azure SQL et du point de terminaison privé peut prendre jusqu’à 10 minutes pour une instanciation complète.
 
@@ -226,10 +224,10 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
 >**Remarque** : les connexions provenant des adresses IP configurées dans la section Règles du pare-feu ci-dessous auront accès à cette base de données. Par défaut, aucune adresse IP publique n’est autorisée.
 
 5. Si nécessaire, accédez à la section **Règles du pare-feu** de la page **Mise en réseau**, puis sélectionnez **+ Ajouter l’adresse IPv4 de votre client** si l’adresse IP de votre client n’est pas déjà renseignée dans les champs **Nom de la règle**, **Adresse IPv4 de début** et **Adresse IPv4 de fin**.
-    
-     ![image](https://github.com/user-attachments/assets/dfdeffca-d33f-44e1-81db-9f68a51f89df)
 
-6. Si nécessaire, sélectionnez **Enregistrer**.
+   ![image](https://github.com/user-attachments/assets/fff5bfb1-53fd-40ea-9a31-5a095e7f3dbc) 
+
+7. Sélectionnez **Enregistrer**.
 
 ### Tester la connectivité au point de terminaison privé
 
@@ -241,48 +239,49 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
 
 3. Entrez le nom d’utilisateur **Tenantadmin2** et le mot de passe **Superuser#170** que vous avez utilisés lors de la création de la machine virtuelle.
 
-   **Important :** accédez aux paramètres Edge/fenêtres contextuelles et redirections et basculez le commutateur bloqué sur **désactivé** avant de sélectionner Connecter.
+   **Important :** Important : accédez aux paramètres Edge, puis aux **fenêtres contextuelles et redirections.** Sélectionnez l’option radiale intitulée **Toujours autoriser les fenêtres contextuelles et les redirections depuis https://portal.azure.com,** puis cliquez sur **Terminé.**
 
 4. Sélectionnez le bouton **Connecter**.
   
 5. Ouvrez Windows PowerShell sur le serveur après vous être connecté.
 
-6. Remplacez **sqlserver-name** par le nom du serveur SQL que vous avez créé dans les étapes précédentes. Par exemple, entrez **nslookup az-sql-srv1a.database.windows.net**. Vous recevrez un message similaire à celui indiqué ci-dessous :
+6. Pour vérifier la résolution de noms du point de terminaison privé, entrez la commande suivante dans la fenêtre du terminal :
+
+   ```bash
+   nslookup server-name.database.windows.net
+
+>**Note**: Replace **sqlserver-name** with the name of the SQL server you created in the previous steps. For example, enter **nslookup az-sql-srv1a.database.windows.net** You’ll receive a message similar to the one shown below:
 
    ````
    
-   Server:  UnKnown
-   Address:  168.63.129.16
+   Server:  UnKnown Address:  168.63.129.16
    
-   Non-authoritative answer:
-   Name:    az-sql-srv1a.privatelink.database.windows.net
-   Address:  10.1.0.5
-   Aliases:  az-sql-srv1a.database.windows.net
+   Non-authoritative answer: Name:    az-sql-srv1a.privatelink.database.windows.net Address:  10.1.0.5 Aliases:  az-sql-srv1a.database.windows.net
    ````
    
->**Remarque**: une adresse IP privée 10.1.0.5 a été renvoyée pour le nom du serveur SQL Server. Cette adresse se trouve dans le sous-réseau **az-sql-srv1a** du réseau virtuel **vnet-2** que vous avez créé précédemment.
+>**Note**: A  private IP address of 10.1.0.5 is returned for the SQL server name. This address is in **az-sql-srv1a** subnet of **vnet-2** virtual network you created previously.
 
-7. Installez [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) sur **vm-3**.
+7. Install [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) on **vm-3.**
  
-8. Ouvrez **SQL Server Management Studio**.
+8. Open **SQL Server Management Studio.**
 
-9. Dans **Se connecter au serveur**, entrez ou sélectionnez les informations suivantes :
+9. In **Connect to server,** enter or select this information:
 
-    |Paramètre|Valeur|
+    |Setting|Value|
     |---|---|
-    |Type de serveur|Sélectionnez **Moteur de base de données**.|
-    |Nom du serveur|Saisissez **az-sql-svr1a.database.windows.net**.|
-    |Authentification|Sélectionnez **Authentification SQL Server**.|
-    |Nom d’utilisateur|Entrez **Tenantadmin2**.|
-    |Mot de passe|Entrez **Superuser#170**.|
-    |Se souvenir du mot de passe|Sélectionnez **Oui**.|
-    |Sécurisation de la connectivité|
-    |Chiffrement|Utilisez le paramètre par défaut « Obligatoire ».|
+    |Server type|Leave the default setting as Database Engine.|
+    |Server name|Enter **az-sql-srv1a.database.windows.net.**|
+    |Authentication|Select **SQL Server Authentication.**|
+    |User name|Enter **Tenantadmin2**.|
+    |Password|Enter **Superuser#170**.|
+    |Remember password|Select **Yes.**|
+    |Connectivity Security|
+    |Encryption|Leave the default setting as Mandatory.|
    
-10. Sélectionnez **Connecter**.
+10. Select **Connect.**
 
-11. Parcourez les bases de données dans le menu de gauche.
+11. Browse databases from left menu.
 
-12. Fermez la connexion du bureau à distance vers vm-3.
+12. Close the remote desktop connection to vm-3.
   
-> **Résultats** : vous vous êtes connecté(e) à un serveur Azure SQL via un point de terminaison privé Azure en utilisant le Portail Azure
+> **Results**: You have connected to an Azure SQL server using an Azure Private Endpoint using the Azure portal.

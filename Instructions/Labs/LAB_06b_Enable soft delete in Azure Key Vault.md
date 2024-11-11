@@ -20,16 +20,18 @@ La suppression d’un coffre de clés sur lequel la suppression réversible n’
 
 ### Vérifier si la suppression réversible est activée sur un coffre de clés et activer la suppression réversible
 
-1. Démarrez une session de navigateur et connectez-vous au [menu du Portail Azure.](https://portal.azure.com/)
+1. Démarrez une session de navigateur et connectez-vous au [menu du Portail Azure](https://portal.azure.com/).
+  
+2. Dans la zone de recherche située en haut du portail, entrez **Coffres de clés**. Sélectionnez **Coffres de clés** dans les résultats de la recherche.
    
-2. Sélectionnez votre coffre de clés.
+3. Accédez au coffre de clés que vous avez créé précédemment.
 
-3. Dans le panneau **Paramètres**, sélectionnez **Propriétés**.
+4. Dans le panneau **Paramètres**, sélectionnez **Propriétés**.
 
-4. Vérifiez si la case d’option en regard de la suppression réversible est définie sur **Activer la protection contre le vidage (appliquer une période de rétention obligatoire pour les coffres et les objets de coffre supprimés).**
+5. Vérifiez si la case d’option en regard de la suppression réversible est définie sur **Activer la protection contre le vidage (appliquer une période de rétention obligatoire pour les coffres et les objets de coffre supprimés).**
 
-5. Si la suppression réversible n’est pas activée sur le coffre de clés, cliquez sur la case d’option **Activer la protection contre le vidage (appliquer une période de rétention obligatoire pour les coffres et les objets de coffre supprimés)** pour activer la suppression réversible, puis cliquez sur **Enregistrer.**
+6. Si la suppression réversible n’est pas activée sur le coffre de clés, cliquez sur la case d’option **Activer la protection contre le vidage (appliquer une période de rétention obligatoire pour les coffres et les objets de coffre supprimés)** pour activer la suppression réversible, puis cliquez sur **Enregistrer.**
 
-![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/06131a60-7f00-4764-a424-87ea41a78394)
+   ![image](https://github.com/user-attachments/assets/8cc1d810-5a15-43fb-9dd8-1484af65897e)
 
 > **Résultats** : vous avez activé la suppression réversible, garantissant ainsi que les ressources supprimées sont conservées pendant 90 jours (par défaut) et que vous pouvez les récupérer et donc annuler leur suppression via le Portail Azure.

@@ -24,17 +24,19 @@ Vous pouvez utiliser l’accès juste-à-temps (JAT) de Microsoft Defender pour 
 
 >**Remarque** : vous pouvez activer l’accès JAT sur une machine virtuelle depuis les pages des machines virtuelles Azure sur le portail Azure.
 
-1. Dans la zone de recherche située en haut du portail, entrez **machine virtuelle**. Sélectionnez **Machines virtuelles** dans les résultats de la recherche.
+1. Démarrez une session de navigateur et connectez-vous au [menu du Portail Azure](https://portal.azure.com/).
+  
+2. Dans la zone de recherche située en haut du portail, entrez **machines virtuelles**. Sélectionnez **Machines virtuelles** dans les résultats de la recherche.
 
-2. Sélectionnez **vm-1**.
+3. Sélectionnez **vm-1**.
  
-3. Sélectionnez **Configuration** dans la section **Paramètres** de vm-1.
+4. Sélectionnez **Configuration** dans la section **Paramètres** de vm-1.
    
-4. Dans **Accès juste-à-temps à la machine virtuelle**, sélectionnez **Activer l’accès juste-à-temps**.
+5. Dans **Accès juste-à-temps à la machine virtuelle**, sélectionnez **Activer l’accès juste-à-temps**.
 
-5. Sous **Accès juste-à-temps à la machine virtuelle,** cliquez sur le lien intitulé **Ouvrir Microsoft Defender pour le cloud.**
+6. Sous **Accès juste-à-temps à la machine virtuelle,** cliquez sur le lien intitulé **Ouvrir Microsoft Defender pour le cloud.**
 
-6. Par défaut, l’accès juste-à-temps pour la machine virtuelle utilise les paramètres suivants :
+7. Par défaut, l’accès juste-à-temps pour la machine virtuelle utilise les paramètres suivants :
 
    - Machines Windows
    
@@ -47,12 +49,12 @@ Vous pouvez utiliser l’accès juste-à-temps (JAT) de Microsoft Defender pour 
      - Accès maximal autorisé : trois heures
      - Adresses IP sources autorisées : toutes les adresses IP
    
-7. Par défaut, l’accès juste-à-temps pour la machine virtuelle utilise les paramètres suivants :
+8. Par défaut, l’accès juste-à-temps pour la machine virtuelle utilise les paramètres suivants :
 
    - Dans l’onglet **Configuré**, cliquez avec le bouton droit sur la machine virtuelle à laquelle vous souhaitez ajouter un port, puis sélectionnez Modifier.
-  
- ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/66cf98b6-2ce0-43c7-a7be-b5d69bcfac1d)
 
+   ![image](https://github.com/user-attachments/assets/aa4ded55-c5b1-4d40-b5a0-a4c33b9eb81b)
+   
    - Sous **JIT VM access configuration** (Configuration de l’accès juste-à-temps à la machine virtuelle), vous pouvez soit modifier les paramètres existants d’un port déjà protégé, soit ajouter un nouveau port personnalisé.
    - Lorsque vous avez fini de modifier les ports, sélectionnez **Enregistrer**.   
 
@@ -69,12 +71,7 @@ Vous pouvez utiliser l’accès juste-à-temps (JAT) de Microsoft Defender pour 
         - S’il n’est pas activé pour la machine virtuelle, vous êtes invité à le faire.
     
         - S’il est activé, sélectionnez **Demander l’accès** pour transmettre une demande d’accès avec l’adresse IP, la plage de temps et les ports de la requête qui ont été configurés pour cette machine virtuelle.
-
-![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/7e454150-bc04-47bc-afa1-e0a1e8af17f9)
-
-
-
-
-
+    
+   ![image](https://github.com/user-attachments/assets/f5d0b67c-7731-4261-b0eb-a56c505dadd4)
 
 > **Résultats** : vous avez étudié différentes méthodes pour activer l’accès JAT sur vos machines virtuelles et savoir comment demander l’accès aux machines virtuelles sur lesquelles il est activé dans Microsoft Defender pour le cloud.
