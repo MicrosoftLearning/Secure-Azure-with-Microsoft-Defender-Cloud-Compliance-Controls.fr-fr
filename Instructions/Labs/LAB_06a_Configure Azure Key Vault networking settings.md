@@ -25,10 +25,10 @@ Vous pouvez utiliser le portail Microsoft Azure pour la configuration des param�
 ### Utilisez le Portail Azure pour créer une instance Azure Key Vault.
 
 1. Démarrez une session de navigateur et connectez-vous au [menu du Portail Azure.](https://portal.azure.com/)
-   
-2. Dans la zone Rechercher du Portail Azure, entrez **Key Vault.**
+  
+2. Dans la zone de recherche située en haut du portail, entrez **Coffres de clés**. Sélectionnez **Coffres de clés** dans les résultats de la recherche.
 
-3. Dans la liste des résultats, choisissez **Key Vault**.
+3. Dans la liste des résultats, choisissez **Coffres de clés**.
 
 4. Dans la section Key Vault, choisissez **Créer.**
 
@@ -45,13 +45,13 @@ Vous pouvez utiliser le portail Microsoft Azure pour la configuration des param�
    |Niveau tarifaire|Utilisez le paramètre par défaut « Standard ».|
    |Jours de conservation des coffres supprimés|Utilisez le paramètre par défaut « 90 ».|
 
-7. Sélectionnez l’**onglet Vérifier + créer** ou sélectionnez le bouton bleu Vérifier + créer en bas de la page.
+6. Sélectionnez l’**onglet Vérifier + créer** ou sélectionnez le bouton bleu Vérifier + créer en bas de la page.
   
-8. Sélectionnez **Créer**.
+7. Sélectionnez **Créer**.
 
 ### Configurez les paramètres de pare-feu et de réseau virtuel Key Vault.
 
-1. Dans la zone Rechercher du Portail Azure, entrez **Key Vault.**
+1. Dans la zone de recherche du Portail Azure, entrez **Coffres de clés.**
 
 2. Accédez au coffre de clés que vous avez créé précédemment.
 
