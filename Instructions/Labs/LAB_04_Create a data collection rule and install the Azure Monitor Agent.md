@@ -47,7 +47,7 @@ Les règles de collecte de données spécifient les données à collecter, tandi
     |**Détails de la règle**|
     |Nom de la règle|**dcr-1**|
     |Abonnement|Sélectionnez votre abonnement.|
-    |Resource group|**az-rg-1**|
+    |Groupe de ressources|**az-rg-1**|
     |Région|**USA Est**|
     |Type de plate-forme|**Windows**|
     |Point de terminaison de collecte de données|Utilisez le paramètre par défaut « Aucun ».|

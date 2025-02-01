@@ -36,7 +36,7 @@ Vous pouvez utiliser un groupe de sécurité réseau pour filtrer le trafic rés
    
 2. Dans la zone de recherche située en haut du portail, entrez **Réseaux virtuels.** Sélectionnez **Réseaux virtuels** dans les résultats de la recherche.
 
-3. Dans la page **Réseaux virtuels**, sélectionnez **+ Créer**.
+3. Dans la page **Réseaux virtuels**, sélectionnez **+ Créer**.
 
 4. Sous l’onglet **Général** de la page **Créer un réseau virtuel**, entrez ou sélectionnez les informations suivantes :
    
@@ -87,7 +87,7 @@ Un groupe de sécurité d’application vous permet de regrouper des serveurs do
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Sélectionnez **az-rg-1**.|
+   |Groupe de ressources|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **asg-web**.|
    |Région|Sélectionnez **USA Est**.|  
@@ -102,7 +102,7 @@ Un groupe de sécurité d’application vous permet de regrouper des serveurs do
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Sélectionnez **az-rg-1**.|
+   |Groupe de ressources|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **asg-mgmt**.|
    |Région|Sélectionnez **USA Est**.|
@@ -127,7 +127,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Sélectionnez **az-rg-1**.|
+   |Groupe de ressources|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom|Entrez **nsg-1**.|
    |Région|Sélectionnez **USA Est**.|  
@@ -206,7 +206,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |---|---|
    |**Détails du projet**|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Sélectionnez **az-rg-1**.|
+   |Groupe de ressources|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom de la machine virtuelle|Entrez **vm-1**.|
    |Région|Sélectionnez **(États-Unis) USA Est**.|
@@ -232,7 +232,7 @@ Un groupe de sécurité réseau (NSG) sécurise le trafic réseau dans votre ré
    |**Interface réseau**|
    |Réseau virtuel|Sélectionnez **vnet-1**.|
    |Sous-réseau|Utilisez le paramètre par défaut subnet-1 (10.0.0.0/24).|
-   |IP publique|Utilisez le paramètre par défaut (new) vm-1-ip.|
+   |Adresse IP publique|Utilisez le paramètre par défaut (new) vm-1-ip.|
    |Groupe de sécurité réseau de la carte réseau|Sélectionnez **Aucun**.|
    
 6. Sélectionnez le bouton **Vérifier + créer** au bas de la page pour continuer.
