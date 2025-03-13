@@ -39,7 +39,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Paramètre|Valeur|
    |---|---|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Sélectionnez **az-rg-1**.|
+   |Groupe de ressources|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom du réseau virtuel|Saisissez **vnet-2**.|
    |Région|Sélectionnez **(États-Unis) USA Est**.|  
@@ -95,7 +95,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Paramètre|Valeur|
    |---|---|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Sélectionnez **az-rg-1**.|
+   |Groupe de ressources|Sélectionnez **az-rg-1**.|
    |**Détails de l’instance**|
    |Nom de la machine virtuelle|Saisissez **vm-3**.|
    |Région|Sélectionnez **(États-Unis) USA Est**.|
@@ -122,7 +122,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |**Interface réseau**|
    |Réseau virtuel|Sélectionnez **vnet-2**.|
    |Sous-réseau|Utilisez le paramètre par défaut subnet-2 (10.0.0.0/24).|
-   |IP publique|Utilisez le paramètre par défaut (new) vm-3-ip.|
+   |Adresse IP publique|Utilisez le paramètre par défaut (new) vm-3-ip.|
    |Groupe de sécurité réseau de la carte réseau|Utilisez le paramètre par défaut « Aucun ».|
    |Supprimer la carte réseau lors de la suppression de la machine virtuelle|Laissez le paramètre par défaut « Activer la mise en réseau accélérée » coché.|
    |Équilibrage de charge|Utilisez le paramètre par défaut « Aucun ».|
@@ -144,7 +144,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
    |Paramètre|Valeur|
    |---|---|
    |Abonnement|Sélectionnez votre abonnement.|
-   |Resource group|Sélectionnez **az-rg-1**.|
+   |Groupe de ressources|Sélectionnez **az-rg-1**.|
    |**Détails de la base de données**|
    |Nom de la base de données|Saisissez **az-sql-db1a**.|
    |Serveur|Sélectionnez **Créer nouveau**.|
@@ -190,7 +190,7 @@ Azure Private Endpoint est le composant fondamental de Private Link dans Azure. 
        |Paramètre|Valeur|
        |---|---|
        |Abonnement|Sélectionnez votre abonnement.|
-       |Resource group|Sélectionnez **az-rg-1**.|
+       |Groupe de ressources|Sélectionnez **az-rg-1**.|
        |Emplacement|Sélectionnez **USA Est**.|
        |Nom|Saisissez **az-pe-1a**.|
        |Sous-ressource cible|Utilisez le paramètre par défaut « SqlServer ».|
